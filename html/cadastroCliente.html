@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro Cliente || Track It</title>
+    <link rel="stylesheet" type="text/css" href="../css/cadastroCliente.css">
+    <script src="../js/cadastro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container-cadastro">
+        <div class="formulario-cadastro">
+            <form id="form-cadastro" onsubmit="cadastrar(event)">
+                <h3>Faça já seu Cadastro</h3>
+
+                <input type="text" placeholder="Usuário:" id="usuario" required>
+                <input type="email" placeholder="E-mail:" id="email" required>
+                <input type="password" placeholder="Senha:" id="senha" >
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.container-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f5f5f5;
+    padding: 20px;
+    gap: 20px; 
+}
+
+.container-cadastro::before {
+    content: "";
+    background: url("../img/carro-personagem.png") no-repeat center center;
+    background-size: contain;
+    height: 90%;     
+    width: 500px;   
+    flex: 0 0 auto;
+}
+
+.formulario-cadastro {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-cadastro form {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 350px;
+}
+
+
+.formulario-cadastro h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.formulario-cadastro input[type="text"],
+.formulario-cadastro input[type="email"],
+.formulario-cadastro input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.formulario-cadastro input:focus {
+    border: 1px solid #ff3333;
+}
+
+
+.formulario-cadastro input[type="submit"] {
+    width: 100%;
+    background: #d62828;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario-cadastro input[type="submit"]:hover {
+    background: #a81616;
+}
+
+.formulario-cadastro p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.formulario-cadastro p a {
+    color: #d62828;
+    text-decoration: none;
+    font-weight: bold;
+}
